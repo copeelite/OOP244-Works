@@ -1,0 +1,10 @@
+#ifndef _244_UTILS_H // replace with relevant names
+#define _244_UTILS_H
+
+// Your header file content goes here
+void flushkeys();
+bool ValidYesResponse(char ch);
+bool yes();
+void readCstr(char cstr[], int len);
+int readInt(int min, int max);
+#endif
