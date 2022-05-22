@@ -16,8 +16,9 @@ piece of work is entirely of my own creation.
 */
 #ifndef _244_FILE_H // replace with relevant names
 #define _244_FILE_H
-#include "ShoppingRec.h"
+//#include "ShoppingRec.h"
 // Your header file content goes here
+struct ShoppingRec;
 namespace sdds {
 	bool openFileForRead();
 	bool openFileForOverwrite();
