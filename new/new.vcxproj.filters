@@ -15,36 +15,30 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="question.h">
+    <ClInclude Include="File.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="quiz.h">
+    <ClInclude Include="Student.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="quiz.cpp">
+    <ClCompile Include="File.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="tester.cpp">
+    <ClCompile Include="gradeReport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Student.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="quiz2.txt">
+    <None Include="simpsons.csv">
       <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="quiz3.txt">
+    </None>
+    <None Include="students.csv">
       <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="quiz4.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="quiz5.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="test.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
+    </None>
   </ItemGroup>
 </Project>

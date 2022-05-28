@@ -14,38 +14,38 @@ shared with any other student or 3rd party content provider. This submitted
 piece of work is entirely of my own creation.
 *****************************************************************************
 */
+
 #ifndef _244_QUESTION_H // replace with relevant names
 #define _244_QUESTION_H
+#include <cstdio>
 namespace quizzer {
 	const int maxQuestion = 60;
 	const int maxAnswers = 10;
 	const int maxTextOfQuestion = 1024;
 	const int maxTextOfAnswer = 128;
-	struct question
+	struct Answer
 	{
-		char a_or_c;
-		char questionText[maxTextOfQuestion + 1];
+		char m_correct;   // X is correct space is false
+		char m_answerText[maxTextOfAnswer];
+	};
+	//IPC 144 fardad   (playlist for 2181)
+	struct Question
+	{
+		char m_type;
+		char m_questionText[maxTextOfQuestion];
+		Answer m_quizAnswer[maxAnswers] = {};
 	};
 
-	struct answer
+	struct Quiz
 	{
-		char correct_or_incorrect;
-		char answerText[maxTextOfAnswer + 1];
-	};
-	struct quiz
-	{
-		question quizQuestion;
-		answer quizAnswer[maxAnswers + 1] = {};
+		Question quizQuestion;
+
 	};
 
+	int readAnswer(Answer* aptr, FILE* fptr);
+	int readQuestion(Question* aptr, FILE* fptr);
 
-	int LoadQuiz(const char* filename);
-	int IsQuizValid();
-	int HasMoreQuestions();
-	void ShowNextQuestion();
-
-	void ShowQuizResults();
-
+	
 
 
 

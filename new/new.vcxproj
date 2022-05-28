@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{90bbc603-8e89-4d33-be56-17847f854d45}</ProjectGuid>
-    <RootNamespace>DIY</RootNamespace>
+    <ProjectGuid>{49f3f559-7296-433f-8553-735d17d3c240}</ProjectGuid>
+    <RootNamespace>new</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,19 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="question.h" />
-    <ClInclude Include="quiz.h" />
+    <ClInclude Include="File.h" />
+    <ClInclude Include="Student.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="quiz.cpp" />
-    <ClCompile Include="tester.cpp" />
+    <ClCompile Include="File.cpp" />
+    <ClCompile Include="gradeReport.cpp" />
+    <ClCompile Include="Student.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="quiz2.txt" />
-    <Text Include="quiz3.txt" />
-    <Text Include="quiz4.txt" />
-    <Text Include="quiz5.txt" />
-    <Text Include="test.txt" />
+    <None Include="simpsons.csv" />
+    <None Include="students.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
